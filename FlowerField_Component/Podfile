@@ -1,16 +1,27 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
+#添加source
+source 'https://github.com/winfredzen/WZSpecs.git'
 
 use_frameworks!
 platform :ios, '8.0' 
 target ‘FlowerField’ do 
 
-pod 'MBProgressHUD'
-pod 'AFNetworking'
+
 pod 'Masonry'
 pod 'YYWebImage'
-pod 'FMDB'
 pod 'ReactiveCocoa', '~> 2.5'
+
+#引入WZCategoryKit
+#pod 'WZCategoryKit'
+#pod 'WZToolsKit'
+#pod 'WZAPIsKit'
+#pod 'WZConfigsKit', '~> 0.1.1'
+#pod 'WZReformerKeysKit'
+#pod 'WZMainViewKit'
+
+pod 'WZSpecialKit'
+pod 'WZAuthorKit'
 
 end
 

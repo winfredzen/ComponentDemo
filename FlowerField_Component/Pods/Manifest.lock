@@ -1,24 +1,24 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - FMDB (2.7.2):
-    - FMDB/standard (= 2.7.2)
-  - FMDB/standard (2.7.2)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - Masonry (1.0.2)
-  - MBProgressHUD (1.0.0)
+  - MBProgressHUD (1.1.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -26,6 +26,36 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - WZAPIsKit (0.1.0):
+    - AFNetworking
+    - WZToolsKit
+  - WZAuthorKit (0.1.1):
+    - Masonry
+    - ReactiveCocoa (~> 2.5)
+    - WZAPIsKit
+    - WZCategoryKit
+    - WZConfigsKit
+    - WZMainViewKit
+    - WZReformerKeysKit
+    - WZToolsKit
+    - YYWebImage
+  - WZCategoryKit (0.1.0)
+  - WZConfigsKit (0.1.1)
+  - WZMainViewKit (0.1.0)
+  - WZReformerKeysKit (0.1.0)
+  - WZSpecialKit (0.1.1):
+    - Masonry
+    - ReactiveCocoa (~> 2.5)
+    - WZAPIsKit
+    - WZCategoryKit
+    - WZConfigsKit
+    - WZMainViewKit
+    - WZReformerKeysKit
+    - WZToolsKit
+    - YYWebImage
+  - WZToolsKit (0.1.0):
+    - FMDB
+    - MBProgressHUD
   - YYCache (1.0.4)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
@@ -35,23 +65,50 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
-  - AFNetworking
-  - FMDB
   - Masonry
-  - MBProgressHUD
   - ReactiveCocoa (~> 2.5)
+  - WZAuthorKit
+  - WZSpecialKit
   - YYWebImage
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - FMDB
+    - Masonry
+    - MBProgressHUD
+    - ReactiveCocoa
+    - YYCache
+    - YYImage
+    - YYWebImage
+  https://github.com/winfredzen/WZSpecs.git:
+    - WZAPIsKit
+    - WZAuthorKit
+    - WZCategoryKit
+    - WZConfigsKit
+    - WZMainViewKit
+    - WZReformerKeysKit
+    - WZSpecialKit
+    - WZToolsKit
+
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  WZAPIsKit: f0799c9e104927cc67475d2a12e93e16fa046781
+  WZAuthorKit: 1aeeafa0be9daabc0c745a1395eb33845a2796fb
+  WZCategoryKit: 413f38b7eae322578a4ca6c14d77696007c6db86
+  WZConfigsKit: c59f771296e7fe4b169f8caac78fa0bfacaa39e4
+  WZMainViewKit: 39b21f613871b095cb94fdb319dc30a811d212b2
+  WZReformerKeysKit: 83f4a022dadcf56f68ff040a191b1e8c06284076
+  WZSpecialKit: f054cb6e0666e6c2cc1121cf5f116e96084340ee
+  WZToolsKit: 46dd0287b5ac7d3389f477622e2f8e707163cb34
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: fb940179bcd5fd5579cda0da42201ad53e9bba67
+PODFILE CHECKSUM: c5b7ca4058b170b6270b8afbf5a693616ab94d08
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3
